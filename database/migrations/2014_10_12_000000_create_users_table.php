@@ -17,6 +17,13 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('gender');
+            $table->string('fow1');
+            $table->string('fow2');
+            $table->string('fow3');
+            $table->string('phone');
+            $table->string('linkedin');
+            $table->decimal('wallet')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
