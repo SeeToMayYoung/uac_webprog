@@ -50,6 +50,7 @@
                     ?>
                     <p class="my-2">Payment Fee: {{$random_value}}</p>
                     <input type="hidden" name="random_value" value="{{ $random_value }}">
+                    <input type="hidden" name="wallet" value=0>
                     @if(Session()->has('paymentError'))
                     <h2 class="text-red-500 text-xl">
                         {{Session()->get('paymentError')}}
